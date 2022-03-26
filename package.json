@@ -1,22 +1,22 @@
 {
   "scripts": {
     "serve": "cross-env NODE_ENV=development concurrently \"postcss public/tailwind.css -o public/build/tailwind.css --watch\"  \"live-server ./public\"",
-    "development": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
-    "production": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
+    "dev": "cross-env NODE_ENV=development postcss public/tailwind.css -o public/build/tailwind.css",
+    "build": "cross-env NODE_ENV=production postcss public/tailwind.css -o public/build/tailwind.css",
     "start": "npm run serve"
   },
   "dependencies": {
-    "autoprefixer": "10.4.2",
-    "tailwindcss": "3.0.15"
+    "autoprefixer": "10.4.4",
+    "tailwindcss": "3.0.23"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0",
-    "cross-env": "^7.0.2",
-    "cssnano": "^4.1.10",
+    "concurrently": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.1.5",
     "live-server": "^1.2.1",
-    "postcss-cli": "^7.1.1"
+    "postcss-cli": "^9.1.0"
   },
   "keywords": [],
-  "name": "tailwind",
+  "name": "tailwind-practise",
   "description": ""
 }
